@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+section{
+    width: 100%;
+    height: 100vh;
+}
+@media screen and (max-width:600px) {
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+}
+
+
+
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 0  0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+section nav .font #a{
+    font-size: 30px;
+    color:rgb(232, 7, 78);
+    cursor: pointer;
+    margin: 7px 0;
+}
+@media screen and (max-width:600px) {
+    section nav .font #a{
+        margin-left: 30px;
+    }
+    section nav{
+        overflow: hidden;
+    }
+    
+}
+section nav .font #a span{
+    color: black;
+}
+section nav ul{
+    list-style: none;
+}
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+section nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.1s;
+}
+section nav ul li a::after{
+    content: '';
+    width:0;
+    background-color:rgb(232, 7, 78);
+    height: 2px;
+    display: block;
+    transition: 0.2s linear;
+
+
+}
+section nav ul li a:hover:after{
+   width: 100%;
+   
+}
+section nav ul li a:hover{
+    color:rgb(232, 7, 78);
+}
+section nav .icon i{
+    font-size: 18px;
+    color: black;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+@media screen and (max-width:600px) {
+    section nav .icon i{
+        visibility: hidden;
+    }
+    section nav ul{
+       margin-left: 40px;
+        
+    }
+}
+section nav .icon i:hover{
+    color:rgb(232, 7, 78);
+}
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 110px;
+    flex-wrap: wrap;
+}
+@media screen and (max-width:600px) {
+    section .main{
+        width: 350px;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+}
+
+section .main .img{
+    width: 522px;
+    position: relative;
+    
+}
+section .main .text h1{
+    font-size: 60px;
+    position: relative;
+    top: -130px;
+    right:235px;
+}
+section .main .text h1  span{
+    margin-right: 15px;
+    color:rgb(232, 7, 78);
+    font-family: mv boli;
+    line-height: 22px;
+    font-size: 70px;
+}
+@media screen  and (max-width:600px) {
+    section .main .text h1{
+        padding-left: 270px;
+        padding-top: 130px;
+        overflow: hidden;
+    }
+    section .main .text h2{
+        padding-left: 270px;
+        overflow: hidden;
+
+    }
+    section .main .img{
+        width:300px;
+        height: 303px;
+        margin-right: 30px;
+        overflow: hidden;
+        
+    
+}
+section .main .img #o{
+    width: 300px;
+    height: 303px;
+    overflow: hidden;
+}
+
+}
+
+section .main .text h2{
+    font-size: 30px;
+    position: relative;
+  top: -90px;
+    right:234px;
+  
+}
+
+section p{
+    width: 650px;
+    
+    position: relative;
+    margin-left: 800px;
+   top: -150px;
+    line-height: 22px;
+
+}
+@media screen and (max-width:600px) {
+    section p{
+        width:300px;
+        position: relative;
+        margin-left: 40px;
+        line-height: 22px;
+        top: 10px;
+        overflow: hidden;
+    }
+    
+}
+section .btn{
+    background-color:rgb(232, 7, 78);
+    position: relative;
+   margin-left: 800px;
+    bottom: 80px;
+    width: 150px;
+    cursor: pointer;
+    padding: 12px 15px;
+
+}
+
+@media screen and (max-width:600px) {
+   section .btn{
+    margin-left: 40px;
+    top: 40px;
+    overflow: hidden;
+    margin-bottom:10px;
+   }
+
+    
+}
+section .btn a{
+    color: white;
+    margin-right: 5px;
+    text-decoration: none;
+}
+section .btn i{
+    color: white;
+    transition: 0.3s;
+}
+section .btn:hover i{
+    transform: translatex(7px);
+}
+#o{
+    height: 520px;
+    
+}

@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    scrollbar-color:rgb(232, 7, 78);
+}
+section{
+    width: 100%;
+    height: 100vh;
+}
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 0  0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+@media screen and (max-width:600px) {
+    section nav .font {
+        margin-left: 30px;
+    }
+    section nav{
+        overflow: hidden;
+    }
+    
+}
+@media screen and (max-width:600px) {
+    section nav .icon i{
+        visibility: hidden;
+    }
+    section nav ul{
+       margin-left: 40px;
+    
+        
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+}
+
+
+@media screen and (max-width:600px) { 
+    .review{
+        width: 356px;
+        overflow: hidden;
+    }
+    .review .text h1{
+        margin-left: 10px;
+        font-size: 50px;
+    }
+    .review .flex1{
+        display: flex;
+        flex-direction: column;
+        margin-left: 8px;
+        
+    }
+    
+}
+
+
+section nav .font #a{
+    font-size: 30px;
+    color: rgb(232, 7, 78);
+    cursor: pointer;
+    margin: 7px 0;
+}
+section nav .font #a span{
+    color: black;
+}
+section nav ul{
+    list-style: none;
+}
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+section nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.1s;
+}
+section nav ul li a::after{
+    content: '';
+    width:0;
+    background-color:rgb(232, 7, 78);
+    height: 2px;
+    display: block;
+    transition: 0.2s linear;
+
+
+}
+section nav ul li a:hover:after{
+   width: 100%;
+   
+}
+section nav ul li a:hover{
+    color:rgb(232, 7, 78);
+}
+section nav .icon i{
+    font-size: 18px;
+    color: black;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+section nav .icon i:hover{
+    color: rgb(232, 7, 78);
+}
+.review .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.review .text h1{
+    font-size: 60px;
+    color: black;
+    font-family: sans-serif;
+    margin-top: 100px;
+}
+.review .text h1 span{
+    color:rgb(232, 7, 78);
+    font-family: mv boli;
+    text-decoration:underline;
+}
+.review .flex1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+
+}
+.review .flex1 .card{
+    height:480px ;
+    width: 325px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px  0 rgba(0, 0, 0, 0.4);
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 50px;
+    
+}
+.review .flex1 .card img:hover{
+    transform: translateY(-60px);
+
+}
+.review .card img{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    transition: 0.3s;
+    border: 5px solid #cccccc;
+    margin: 10px;
+}
+.review .card .icon{
+    color:rgb(232, 7, 78);
+    margin: 3px;
+}
+.review .card .social{
+    margin: 10px;
+}
+.review .card italic{
+  text-align: center;
+}
